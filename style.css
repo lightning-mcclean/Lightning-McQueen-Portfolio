@@ -1,0 +1,155 @@
+/* STYLE SECTIONING TAGS */
+*{margin: 0px;
+  padding: 0px; }
+body {background-color: #260D1C;
+     text-align: center; }
+p1 {color: #FA3979;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: italic;
+    text-align: left;
+  font-variation-settings: 
+    "wdth" <width>;
+   margin-top: 2% ; 
+   margin-bottom: 0;
+  margin-left: 7% ;
+  margin-right: 0 ;
+  max-width: 45% ; 
+   }
+p2 {color: #FA3979;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: none;
+    text-align: left;
+  font-variation-settings: 
+    "wdth" <width>;
+   margin-top: 8%; 
+   margin-bottom: 0;
+   margin-right: 7% ;
+  margin-left: 0; 
+   max-width: 45% ; }
+div.quotes {
+  display: flex;         
+  gap:0;
+  margin: 0% ;
+  text-align:left; 
+  flex: -2 ; 
+  margin-bottom: 5% ; }
+p {color: #FA3979;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: none;
+  font-variation-settings: 
+    "wdth" <width>;}
+div.about-mcqueen {
+  display: flex;         
+  gap:5%;
+  margin: 0;
+  text-align:left; 
+  flex: 1; }
+div.years {
+  display: flex;         
+  gap: 110px;
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:5%;
+  margin-right:5%;
+  text-align: center; 
+  flex: 1; }
+div.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%; }
+/* STYLE TEXT */
+h1 {font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 60px;
+  font-optical-sizing: auto-flow;
+  padding: 0.5em; }
+div.link-left{
+  display: inline-block;
+  padding: 12px 12px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  background-color: #FA5839;
+  color: #FABA39;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-left: 7% ; }
+  div.link-right {
+  display: inline-block;
+  padding: 24px 67px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  background-color: #FA5839;
+  color: #FABA39;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: center;
+  margin-right: 7% ;}
+div.link-left:hover, div.link-right:hover {
+  background-color: #FA3979;}
+a.fake-button {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  background-color: #FA5839;
+  color: #FABA39;
+  border-radius: 4px;
+  margin-top: 4%;
+  margin-bottom:4%; }
+a.fake-button:hover {background-color: #FA3979;}
+
+a {color: #FABA39;
+  text-decoration: none; }
+/* STYLE IMAGES */
+img.home-center {
+  width:400px;
+  height: auto; 
+  margin-left: 1em; 
+  margin-right: 2em; 
+  margin-top: 2em;
+  margin-bottom: 2em; }
+img.timeline {
+  width: 24.4%;
+  height: 300px;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-bottom: 2em;
+  margin-top: 0}
+img {width: 11.05%;
+    height:150px }
+/* STYLE NAV BAR */
+
+ul { 
+  list-style-type: none; 
+  background-color: #FA5839;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 1em; 
+  text-align: right;
+   }
+li {display: inline;  
+   padding: 1em; 
+   overflow: wrap; }
+li a { 
+  text-decoration: none; 
+  color: #FABA39 ;
+  padding: 1em; }
+
+li a:hover {background-color: #FA3979; }
