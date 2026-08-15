@@ -1,4 +1,5 @@
 /* STYLE SECTIONING TAGS */
+/* STYLE SECTIONING TAGS */
 *{margin: 0px;
   padding: 0px; }
 body {background-color: #260D1C;
@@ -17,6 +18,52 @@ p1 {color: #FA3979;
   margin-right: 0 ;
   max-width: 45% ; 
    }
+h2 {font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 60px;
+  font-optical-sizing: auto-flow;
+  padding: 0.5em; }
+button {
+  display: inline-block;
+  padding: 9px 9px;
+  text-decoration: none;
+  text-align: center ;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 100% ; 
+  font-optical-sizing: auto;
+  background-color: #FA5839;
+  color: #FABA39;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: center;
+  margin: 10px 0 ; }
+button#restart {
+  display: inline-block;
+  padding: 9px 9px;
+  text-decoration: none;
+  text-align: center ;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-optical-sizing: auto;
+  background-color: #FA5839;
+  color: #FABA39;
+  border-radius: 4px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: center;
+  margin: 10px 0 ;
+  margin-bottom: 5% ;
+  margin-top: 3% ; }
+button:hover{
+  background-color: #FA3979;}
+button.clicked {
+    background-color: #FA3979
+}
 p2 {color: #FA3979;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -42,6 +89,26 @@ p {color: #FA3979;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: none;
+  font-variation-settings: 
+    "wdth" <width>;}
+p#mid-plot {color: #FA3979;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 100% ; 
+  font-weight: 1000;
+  font-style: none;
+  font-variation-settings: 
+    "wdth" <width>;
+  margin-bottom: 7% ; }
+
+ p4{color: #FA3979;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 130% ; 
+  font-weight: 1000;
+  font-style: none;
+  margin-top: 10% ; 
+  margin-bottom: 0 ; 
   font-variation-settings: 
     "wdth" <width>;}
 div.about-mcqueen {
@@ -131,8 +198,54 @@ img.timeline {
   margin-right: 0.25em;
   margin-bottom: 2em;
   margin-top: 0}
-img {width: 11.05%;
-    height:150px }
+img {
+  align-content: center;
+  height: 400px;
+  width: 250px; 
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  margin-bottom: 2em;
+  margin-top: 0}
+.full-screen-footer {
+  /* Break out of any narrow containers to fill the screen */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  /* Force all images into a single horizontal row */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevents images from wrapping to a new line */
+  
+  /* Remove any browser padding */
+  padding: 0;
+  margin-top: auto; /* Pushes footer to the bottom if using grid/flex layout */
+}
+
+.full-screen-footer img {
+flex: 1; 
+  min-width: 0;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+.full-screen-footer {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin-top: auto;
+}
 /* STYLE NAV BAR */
 
 ul { 
@@ -153,3 +266,35 @@ li a {
   padding: 1em; }
 
 li a:hover {background-color: #FA3979; }
+/* STYLE FLEX CONTAINER */
+
+.question {
+  display: flex;
+  font-weight: 200;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  gap: 20px ; 
+  margin-top: 2em;
+  margin-bottom: 2em; 
+}
+
+.answer-choice {
+  margin: 5px;
+}
+
+main#quiz {
+  text-align: center ;
+}
+/* STYLE IMAGES */
+.answer-choice img {
+  height: 10em;
+}
+div.answer-choice {
+  display: flex ; 
+  flex-direction: column ;
+  align-items: center ; 
+  text-align: center ;
+  margin:0  ; 
+  width: 300px ;
+}
